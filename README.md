@@ -51,7 +51,7 @@ Hosting Environment: Localhost (XAMPP/WAMP recommended)
 
 3.Start Apache and MySQL from the XAMPP control panel.
 
-4.Open<img width="1360" height="768" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/ff702f10-564b-4f37-bdb2-34b3c8b219bf" /> in your browser.
+4.Open http://localhost/phpmyadmin in your browser.
 
 5.Click on "New", create database Tour and click Create.
 
@@ -62,6 +62,7 @@ Hosting Environment: Localhost (XAMPP/WAMP recommended)
 8.Choose the provided .sql file from the /database folder and click Go.
 
 9.Now run the project via http://localhost/project-folder.
+
 
 
 
