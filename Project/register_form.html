@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register Form</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Poppins', sans-serif;
+      }
+
+      body {
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: url('https://wallpapers.com/images/featured/travel-ibk7fgrvtvhs7qzg.webp') no-repeat center center fixed;
+            background-size: cover;
+      }
+
+      .form-container {
+         width: 100%;
+         max-width: 400px;
+         background: #fff;
+         padding: 25px 30px;
+         border-radius: 10px;
+         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-container h3 {
+         text-align: center;
+         margin-bottom: 20px;
+         color: #2d3436;
+      }
+
+      .form-container form input {
+         width: 100%;
+         padding: 10px 15px;
+         margin: 10px 0;
+         border: 1px solid #dfe6e9;
+         border-radius: 5px;
+         background-color: #f5f5f5;
+      }
+
+      .form-container form input:focus {
+         border: 1px solid #74b9ff;
+         outline: none;
+         background: #fff;
+      }
+
+      .form-container form .input-icon {
+         position: relative;
+      }
+
+      .form-container form .input-icon i {
+         position: absolute;
+         top: 50%;
+         left: 10px;
+         transform: translateY(-50%);
+         color: #636e72;
+      }
+
+      .form-container form input[type="text"], 
+      .form-container form input[type="email"],
+      .form-container form input[type="password"] {
+         padding-left: 35px;
+      }
+
+      .form-container form .form-btn {
+         width: 100%;
+         background-color: #0984e3;
+         color: white;
+         padding: 10px;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         font-weight: bold;
+         transition: background 0.3s;
+      }
+
+      .form-container form .form-btn:hover {
+         background-color: #00cec9;
+      }
+
+      .form-container form p {
+         text-align: center;
+         margin-top: 15px;
+         color: #636e72;
+      }
+
+      .form-container form p a {
+         color: #0984e3;
+         text-decoration: none;
+      }
+
+      .form-container form p a:hover {
+         text-decoration: underline;
+      }
+   </style>
+</head>
+<body>
+   <div class="form-container">
+      <form action="" method="post">
+         <h3>Forgot Password</h3>
+
+         <div class="input-icon">
+            <i class="fas fa-user"></i>
+            <input type="text" name="name" required placeholder="Enter your name">
+         </div>
+
+         <div class="input-icon">
+            <i class="fas fa-envelope"></i>
+            <input type="email" name="email" required placeholder="Enter your email">
+         </div>
+
+         <div class="input-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" required placeholder="Enter your new password">
+         </div>
+
+         <div class="input-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="cpassword" required placeholder="Confirm your password">
+         </div>
+
+         <input type="submit" name="submit" value="Change Password" class="form-btn">
+      </form>
+   </div>
+</body>
+</html>
